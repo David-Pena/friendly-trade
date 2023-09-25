@@ -1,28 +1,49 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column has-text-centered">
+        <img src="./assets/logo.png" width="200" height="200" />
+      </div>
+      <div class="column">
+        <h1 class="title is-size-5">Iniciar Sesión</h1>
+      </div>
+      <div class="column">
+        <div class="field">
+          <p class="control">
+            <input class="input" type="email" placeholder="Email" />
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="field">
+          <p class="control">
+            <input class="input" type="password" placeholder="Contraseña" />
+          </p>
+        </div>
+      </div>
+      <div class="column has-text-centered">
+        <button class="button is-dark">Iniciar Sesión</button>
+        <p class="muted mt-3">Registrarse</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container {
+  padding: 50px;
+}
+
+.muted {
+  color: rgb(182, 181, 181);
+  font-weight: 400;
+  font-size: 0.9em;
 }
 </style>
